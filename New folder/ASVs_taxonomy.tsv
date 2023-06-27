@@ -1,0 +1,328 @@
+	domain	phylum	class	order	family	genus	species
+ASV_1	Bacteria	Bacteroidota	Bacteroidia	Bacteroidales	NA	NA	NA
+ASV_2	Bacteria	NA	NA	NA	NA	NA	NA
+ASV_3	Bacteria	Bacteroidota	Bacteroidia	Bacteroidales	Bacteroidaceae	Bacteroides	NA
+ASV_4	Bacteria	Bacteroidota	Bacteroidia	Bacteroidales	NA	NA	NA
+ASV_5	Bacteria	Bacteroidota	Bacteroidia	NA	NA	NA	NA
+ASV_6	Bacteria	Bacteroidota	Bacteroidia	Bacteroidales	NA	NA	NA
+ASV_7	Bacteria	Bacteroidota	Bacteroidia	NA	NA	NA	NA
+ASV_8	Bacteria	Bacteroidota	Bacteroidia	Bacteroidales	NA	NA	NA
+ASV_9	Bacteria	NA	NA	NA	NA	NA	NA
+ASV_10	Bacteria	Bacteroidota	Bacteroidia	Bacteroidales	NA	NA	NA
+ASV_11	Bacteria	Firmicutes	Clostridia	Clostridiales	Clostridiaceae	Candidatus Arthromitus	NA
+ASV_12	Bacteria	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Lactobacillus	NA
+ASV_13	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Verrucomicrobiales	Akkermansiaceae	Akkermansia	NA
+ASV_14	NA	NA	NA	NA	NA	NA	NA
+ASV_15	Bacteria	Firmicutes	Bacilli	Erysipelotrichales	Erysipelotrichaceae	Turicibacter	NA
+ASV_16	Bacteria	Bacteroidota	Bacteroidia	Bacteroidales	NA	NA	NA
+ASV_17	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_18	Bacteria	Bacteroidota	Bacteroidia	Bacteroidales	NA	NA	NA
+ASV_19	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_20	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_21	Bacteria	NA	NA	NA	NA	NA	NA
+ASV_22	Bacteria	Actinobacteriota	Actinobacteria	Bifidobacteriales	Bifidobacteriaceae	Bifidobacterium	NA
+ASV_23	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_24	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Roseburia	NA
+ASV_25	Bacteria	Firmicutes	NA	NA	NA	NA	NA
+ASV_26	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_27	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	A2	NA
+ASV_28	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_29	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_30	Bacteria	NA	NA	NA	NA	NA	NA
+ASV_31	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_32	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_33	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	Oscillibacter	NA
+ASV_34	Bacteria	Proteobacteria	Gammaproteobacteria	Enterobacterales	NA	NA	NA
+ASV_35	Bacteria	Bacteroidota	Bacteroidia	Bacteroidales	NA	NA	NA
+ASV_36	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_37	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_38	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	NA	NA
+ASV_39	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	Oscillibacter	NA
+ASV_40	NA	NA	NA	NA	NA	NA	NA
+ASV_41	NA	NA	NA	NA	NA	NA	NA
+ASV_42	Bacteria	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Lactobacillus	NA
+ASV_43	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_44	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	[Eubacterium] xylanophilum group	NA
+ASV_45	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_46	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_47	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_48	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	NA	NA
+ASV_49	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_50	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_51	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	[Eubacterium] oxidoreducens group	NA
+ASV_52	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-006	NA
+ASV_53	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_54	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_55	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_56	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_57	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_58	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_59	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_60	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_61	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_62	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	Oscillibacter	NA
+ASV_63	Bacteria	Firmicutes	Clostridia	Oscillospirales	Ruminococcaceae	Anaerotruncus	NA
+ASV_64	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Blautia	NA
+ASV_65	Bacteria	Firmicutes	NA	NA	NA	NA	NA
+ASV_66	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-006	NA
+ASV_67	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_68	Bacteria	Firmicutes	Bacilli	Acholeplasmatales	Acholeplasmataceae	Anaeroplasma	NA
+ASV_69	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_70	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-001	NA
+ASV_71	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_72	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_73	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_74	Bacteria	Firmicutes	Clostridia	Clostridia vadinBB60 group	NA	NA	NA
+ASV_75	Bacteria	Firmicutes	Clostridia	Oscillospirales	[Eubacterium] coprostanoligenes group	NA	NA
+ASV_76	Bacteria	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Lactobacillus	NA
+ASV_77	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_78	Bacteria	Firmicutes	Clostridia	Oscillospirales	Butyricicoccaceae	Butyricicoccus	NA
+ASV_79	Bacteria	Firmicutes	Clostridia	NA	NA	NA	NA
+ASV_80	Bacteria	Firmicutes	Clostridia	Oscillospirales	NA	NA	NA
+ASV_81	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_82	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_83	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_84	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	Colidextribacter	NA
+ASV_85	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_86	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_87	Bacteria	Firmicutes	NA	NA	NA	NA	NA
+ASV_88	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_89	Bacteria	Firmicutes	NA	NA	NA	NA	NA
+ASV_90	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_91	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_92	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_93	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_94	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_95	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_96	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_97	Bacteria	Firmicutes	Bacilli	Erysipelotrichales	Erysipelotrichaceae	Dubosiella	NA
+ASV_98	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_99	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_100	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-001	NA
+ASV_101	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-001	NA
+ASV_102	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	[Eubacterium] xylanophilum group	NA
+ASV_103	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	Colidextribacter	NA
+ASV_104	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	A2	NA
+ASV_105	Bacteria	Firmicutes	Clostridia	Oscillospirales	Ruminococcaceae	NA	NA
+ASV_106	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_107	Bacteria	Firmicutes	Clostridia	Peptostreptococcales-Tissierellales	Anaerovoracaceae	[Eubacterium] nodatum group	NA
+ASV_108	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_109	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_110	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_111	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_112	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-006	NA
+ASV_113	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-006	NA
+ASV_114	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_115	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_116	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_117	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_118	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_119	Bacteria	Proteobacteria	Alphaproteobacteria	Rickettsiales	Mitochondria	NA	NA
+ASV_120	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_121	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-006	NA
+ASV_122	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_123	Bacteria	NA	NA	NA	NA	NA	NA
+ASV_124	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_125	Bacteria	Firmicutes	Clostridia	NA	NA	NA	NA
+ASV_126	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_127	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_128	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_129	Bacteria	Firmicutes	Clostridia	Oscillospirales	NA	NA	NA
+ASV_130	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Roseburia	NA
+ASV_131	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_132	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-001	NA
+ASV_133	Bacteria	Firmicutes	Clostridia	Oscillospirales	Ruminococcaceae	Anaerotruncus	NA
+ASV_134	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	Oscillibacter	NA
+ASV_135	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_136	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Roseburia	NA
+ASV_137	Bacteria	Actinobacteriota	Coriobacteriia	Coriobacteriales	Eggerthellaceae	Enterorhabdus	NA
+ASV_138	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_139	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_140	Bacteria	Firmicutes	Bacilli	Lactobacillales	Lactobacillaceae	Lactobacillus	NA
+ASV_141	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_142	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_143	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae FCS020 group	NA
+ASV_144	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	A2	NA
+ASV_145	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnoclostridium	NA
+ASV_146	Bacteria	NA	NA	NA	NA	NA	NA
+ASV_147	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_148	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_149	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_150	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	[Eubacterium] oxidoreducens group	NA
+ASV_151	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_152	Bacteria	Firmicutes	Clostridia	NA	NA	NA	NA
+ASV_153	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	GCA-900066575	NA
+ASV_154	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Blautia	NA
+ASV_155	Bacteria	Firmicutes	Clostridia	Oscillospirales	Butyricicoccaceae	Butyricicoccus	NA
+ASV_156	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_157	Bacteria	Firmicutes	Clostridia	NA	NA	NA	NA
+ASV_158	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_159	Bacteria	Patescibacteria	Saccharimonadia	Saccharimonadales	Saccharimonadaceae	Candidatus Saccharimonas	NA
+ASV_160	Bacteria	Firmicutes	Clostridia	NA	NA	NA	NA
+ASV_161	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_162	Bacteria	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Pseudomonadaceae	Pseudomonas	NA
+ASV_163	Bacteria	Firmicutes	Clostridia	NA	NA	NA	NA
+ASV_164	Bacteria	Firmicutes	Clostridia	Clostridia UCG-014	NA	NA	NA
+ASV_165	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_166	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_167	Bacteria	Actinobacteriota	Coriobacteriia	Coriobacteriales	Eggerthellaceae	Enterorhabdus	NA
+ASV_168	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_169	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_170	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_171	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	Intestinimonas	NA
+ASV_172	Bacteria	NA	NA	NA	NA	NA	NA
+ASV_173	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_174	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	ASF356	NA
+ASV_175	Bacteria	Firmicutes	Clostridia	Clostridia vadinBB60 group	NA	NA	NA
+ASV_176	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	NA	NA
+ASV_177	Bacteria	Firmicutes	Clostridia	Peptostreptococcales-Tissierellales	Anaerovoracaceae	Family XIII UCG-001	NA
+ASV_178	Bacteria	Firmicutes	Clostridia	Oscillospirales	NA	NA	NA
+ASV_179	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Roseburia	NA
+ASV_180	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	NA	NA
+ASV_181	Bacteria	Firmicutes	Clostridia	Clostridia UCG-014	NA	NA	NA
+ASV_182	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_183	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_184	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_185	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Roseburia	NA
+ASV_186	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-008	NA
+ASV_187	Bacteria	Firmicutes	Clostridia	Clostridia vadinBB60 group	NA	NA	NA
+ASV_188	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_189	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_190	Bacteria	Firmicutes	Clostridia	Oscillospirales	Ruminococcaceae	Caproiciproducens	NA
+ASV_191	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_192	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_193	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-001	NA
+ASV_194	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_195	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	Oscillibacter	NA
+ASV_196	Bacteria	NA	NA	NA	NA	NA	NA
+ASV_197	Bacteria	NA	NA	NA	NA	NA	NA
+ASV_198	Bacteria	Firmicutes	Clostridia	Oscillospirales	NA	NA	NA
+ASV_199	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_200	Bacteria	Firmicutes	Clostridia	NA	NA	NA	NA
+ASV_201	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	NA	NA
+ASV_202	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_203	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	NA	NA
+ASV_204	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_205	Bacteria	Firmicutes	Clostridia	Clostridia vadinBB60 group	NA	NA	NA
+ASV_206	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	ASF356	NA
+ASV_207	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-001	NA
+ASV_208	Bacteria	Firmicutes	Clostridia	Clostridiales	Clostridiaceae	NA	NA
+ASV_209	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	GCA-900066575	NA
+ASV_210	Bacteria	Firmicutes	Clostridia	NA	NA	NA	NA
+ASV_211	Bacteria	Firmicutes	Clostridia	Oscillospirales	NA	NA	NA
+ASV_212	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	Colidextribacter	NA
+ASV_213	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_214	Bacteria	Firmicutes	Bacilli	RF39	NA	NA	NA
+ASV_215	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_216	Bacteria	Cyanobacteria	Cyanobacteriia	Chloroplast	NA	NA	NA
+ASV_217	Bacteria	Firmicutes	Clostridia	Oscillospirales	NA	NA	NA
+ASV_218	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-001	NA
+ASV_219	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Roseburia	NA
+ASV_220	Bacteria	Firmicutes	Clostridia	Oscillospirales	Ruminococcaceae	Ruminococcus	NA
+ASV_221	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	A2	NA
+ASV_222	Bacteria	Firmicutes	Bacilli	RF39	NA	NA	NA
+ASV_223	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	GCA-900066575	NA
+ASV_224	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	GCA-900066575	NA
+ASV_225	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_226	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-001	NA
+ASV_227	Bacteria	Actinobacteriota	Coriobacteriia	Coriobacteriales	Eggerthellaceae	NA	NA
+ASV_228	Bacteria	Firmicutes	Clostridia	NA	NA	NA	NA
+ASV_229	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	GCA-900066575	NA
+ASV_230	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Roseburia	NA
+ASV_231	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Marvinbryantia	NA
+ASV_232	Bacteria	Firmicutes	Bacilli	RF39	NA	NA	NA
+ASV_233	Bacteria	Firmicutes	Clostridia	Clostridia UCG-014	NA	NA	NA
+ASV_234	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Tuzzerella	NA
+ASV_235	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	A2	NA
+ASV_236	Bacteria	Cyanobacteria	Cyanobacteriia	Chloroplast	NA	NA	NA
+ASV_237	Bacteria	Firmicutes	Bacilli	Lactobacillales	Streptococcaceae	Streptococcus	NA
+ASV_238	Bacteria	Actinobacteriota	Coriobacteriia	Coriobacteriales	Eggerthellaceae	Enterorhabdus	NA
+ASV_239	Bacteria	Firmicutes	Clostridia	Clostridia UCG-014	NA	NA	NA
+ASV_240	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	Oscillibacter	NA
+ASV_241	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Acetitomaculum	NA
+ASV_242	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_243	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-006	NA
+ASV_244	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_245	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_246	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	Intestinimonas	NA
+ASV_247	Bacteria	Firmicutes	Clostridia	Clostridia UCG-014	NA	NA	NA
+ASV_248	Bacteria	Firmicutes	Clostridia	Peptostreptococcales-Tissierellales	Anaerovoracaceae	Family XIII AD3011 group	NA
+ASV_249	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	Colidextribacter	NA
+ASV_250	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	GCA-900066575	NA
+ASV_251	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-006	NA
+ASV_252	Bacteria	Patescibacteria	Saccharimonadia	Saccharimonadales	Saccharimonadaceae	Candidatus Saccharimonas	NA
+ASV_253	Bacteria	Firmicutes	Clostridia	Peptostreptococcales-Tissierellales	Anaerovoracaceae	Family XIII AD3011 group	NA
+ASV_254	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_255	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Roseburia	NA
+ASV_256	Bacteria	Firmicutes	Clostridia	Clostridia vadinBB60 group	NA	NA	NA
+ASV_257	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Roseburia	NA
+ASV_258	Bacteria	Firmicutes	Clostridia	Oscillospirales	Ruminococcaceae	Harryflintia	NA
+ASV_259	Bacteria	Patescibacteria	Saccharimonadia	Saccharimonadales	Saccharimonadaceae	Candidatus Saccharimonas	NA
+ASV_260	Bacteria	Firmicutes	Clostridia	Clostridia vadinBB60 group	NA	NA	NA
+ASV_261	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-006	NA
+ASV_262	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-006	NA
+ASV_263	Bacteria	Firmicutes	NA	NA	NA	NA	NA
+ASV_264	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_265	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_266	Bacteria	NA	NA	NA	NA	NA	NA
+ASV_267	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_268	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_269	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-008	NA
+ASV_270	Bacteria	Firmicutes	Bacilli	Erysipelotrichales	Erysipelatoclostridiaceae	NA	NA
+ASV_271	Bacteria	NA	NA	NA	NA	NA	NA
+ASV_272	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-001	NA
+ASV_273	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_274	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_275	Bacteria	Firmicutes	Clostridia	Monoglobales	Monoglobaceae	Monoglobus	NA
+ASV_276	Bacteria	Firmicutes	Clostridia	Clostridia vadinBB60 group	NA	NA	NA
+ASV_277	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_278	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_279	Bacteria	Firmicutes	NA	NA	NA	NA	NA
+ASV_280	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	GCA-900066575	NA
+ASV_281	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_282	Bacteria	Firmicutes	Clostridia	Clostridiales	Clostridiaceae	Clostridium sensu stricto 1	NA
+ASV_283	Bacteria	Actinobacteriota	Coriobacteriia	Coriobacteriales	Eggerthellaceae	Enterorhabdus	NA
+ASV_284	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_285	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-010	NA
+ASV_286	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_287	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae UCG-006	NA
+ASV_288	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Lachnospiraceae NK4A136 group	NA
+ASV_289	Bacteria	Firmicutes	Bacilli	Staphylococcales	Staphylococcaceae	Staphylococcus	NA
+ASV_290	Bacteria	Firmicutes	Clostridia	Clostridia UCG-014	NA	NA	NA
+ASV_291	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_292	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	Colidextribacter	NA
+ASV_293	Bacteria	Firmicutes	Clostridia	NA	NA	NA	NA
+ASV_294	Bacteria	Firmicutes	Clostridia	Oscillospirales	Ruminococcaceae	Anaerotruncus	NA
+ASV_295	Bacteria	Firmicutes	Bacilli	RF39	NA	NA	NA
+ASV_296	Bacteria	Firmicutes	Clostridia	Peptostreptococcales-Tissierellales	Anaerovoracaceae	[Eubacterium] brachy group	NA
+ASV_297	Bacteria	Firmicutes	Clostridia	NA	NA	NA	NA
+ASV_298	Bacteria	Firmicutes	Clostridia	Oscillospirales	Oscillospiraceae	NA	NA
+ASV_299	Bacteria	Firmicutes	Bacilli	Lactobacillales	Streptococcaceae	Streptococcus	NA
+ASV_300	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_301	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_302	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_303	Bacteria	Actinobacteriota	Coriobacteriia	Coriobacteriales	Eggerthellaceae	Enterorhabdus	NA
+ASV_304	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	NA	NA
+ASV_305	Bacteria	Actinobacteriota	Coriobacteriia	Coriobacteriales	Eggerthellaceae	Enterorhabdus	NA
+ASV_306	Bacteria	Deinococcota	Deinococci	Deinococcales	Deinococcaceae	Deinococcus	NA
+ASV_307	Bacteria	Firmicutes	Clostridia	Clostridia UCG-014	NA	NA	NA
+ASV_308	Bacteria	Firmicutes	Clostridia	Peptostreptococcales-Tissierellales	Anaerovoracaceae	[Eubacterium] brachy group	NA
+ASV_309	Bacteria	Actinobacteriota	Actinobacteria	Actinomycetales	Actinomycetaceae	Actinomyces	NA
+ASV_310	Bacteria	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Moraxellaceae	Acinetobacter	NA
+ASV_311	Bacteria	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Pseudomonadaceae	Pseudomonas	NA
+ASV_312	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae	Marvinbryantia	NA
+ASV_313	Bacteria	Firmicutes	Clostridia	Clostridia vadinBB60 group	NA	NA	NA
+ASV_314	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Neisseriaceae	Neisseria	NA
+ASV_315	Bacteria	Bacteroidota	Bacteroidia	Bacteroidales	Bacteroidaceae	Bacteroides	NA
+ASV_316	Bacteria	Firmicutes	Clostridia	NA	NA	NA	NA
+ASV_317	Bacteria	Cyanobacteria	Cyanobacteriia	Chloroplast	NA	NA	NA
+ASV_318	Bacteria	Firmicutes	Bacilli	Lactobacillales	Streptococcaceae	Streptococcus	NA
+ASV_319	Bacteria	Bacteroidota	Bacteroidia	Bacteroidales	Porphyromonadaceae	Porphyromonas	NA
+ASV_320	Bacteria	Firmicutes	Bacilli	Lactobacillales	Enterococcaceae	NA	NA
+ASV_321	Bacteria	Firmicutes	Clostridia	Clostridiales	Clostridiaceae	Clostridium sensu stricto 1	NA
+ASV_322	Bacteria	NA	NA	NA	NA	NA	NA
+ASV_323	Bacteria	Firmicutes	Bacilli	Bacillales	Bacillaceae	Bacillus	NA
+ASV_324	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodobacterales	Rhodobacteraceae	Rhodobacter	NA
+ASV_325	Bacteria	Firmicutes	Bacilli	Lactobacillales	Listeriaceae	Listeria	NA
+ASV_326	Bacteria	NA	NA	NA	NA	NA	NA
+ASV_327	Bacteria	Firmicutes	Bacilli	Lactobacillales	NA	NA	NA
