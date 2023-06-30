@@ -1,5 +1,7 @@
-install.packages("packrat")
-packrat::init("~/R/Tutorials/Tutorials")
+#This is a tutorial about statistical analyis of Microbiome data
+#This tutorial follows this link
+#https://www.nicholas-ollberding.com/post/introduction-to-the-statistical-analysis-of-microbiome-data-in-r/
+#I will also implement examples from other sources
 
 cran_packages <- c("tidyverse", "cowplot", "picante", "vegan", "HMP", "dendextend", "rms", "devtools")
 .bioc_packages <- c("phyloseq", "DESeq2", "microbiome", "metagenomeSeq", "ALDEx2")
@@ -15,6 +17,7 @@ devtools::install_github("adw96/breakaway")
 devtools::install_github(repo = "malucalle/selbal")
 
 install.packages("ALDEx2","metagenomeSeq","HMP","rms")
+
 # Loading the library
 library("selbal")
 library(tidyverse); packageVersion("tidyverse")                 
@@ -145,3 +148,76 @@ labels_colors(ward) <- colorCode[meta$Status][order.dendrogram(ward)]
 #Plot
 plot(ward)
 
+## now i need to try a heat map
+
+#Alpha Diversity - the diversity in a single ecosystem or sample. 
+#The simplest measure is richness, the number of species (or OTUs) observed in the sample. 
+
+ggplot(data = data.frame("total_reads" =  phyloseq::sample_sums(ps),
+                         "observed" = phyloseq::estimate_richness(ps, measures = "Observed")[, 1]),
+       aes(x = total_reads, y = observed)) +
+  geom_point() +
+  geom_smooth(method="lm", se = FALSE) +
+  labs(x = "\nTotal Reads", y = "Observed Richness\n")
+
+#Subsample reads
+(ps_rare <- phyloseq::rarefy_even_depth(ps, rngseed = 123, replace = FALSE)) #using this function to equaly subsample from all the rows (samples
+head(phyloseq::sample_sums(ps_rare))
+
+adiv <- data.frame(
+  "Observed" = phyloseq::estimate_richness(ps_rare, measures = "Observed"),
+  "Shannon" = phyloseq::estimate_richness(ps_rare, measures = "Shannon"),
+  "PD" = picante::pd(samp = data.frame(t(data.frame(phyloseq::otu_table(ps_rare)))), tree = phyloseq::phy_tree(ps_rare),include.root = F)[, 1],
+  "Status" = phyloseq::sample_data(ps_rare)$Status
+)
+
+head(adiv)
+
+#Plot adiv measures
+adiv %>%
+  gather(key = metric, value = value, c("Observed", "Shannon", "PD")) %>%
+  mutate(metric = factor(metric, levels = c("Observed", "Shannon", "PD"))) %>%
+  ggplot(aes(x = Status, y = value)) +
+  geom_boxplot(outlier.color = NA) +
+  geom_jitter(aes(color = Status), height = 0, width = .2) +
+  labs(x = "", y = "") +
+  facet_wrap(~ metric, scales = "free") +
+  theme_bw()+
+  theme(legend.position="none")
+
+#Summarize
+adiv %>%
+  group_by(Status) %>%
+  dplyr::summarise(median_observed = median(Observed),
+                   median_shannon = median(Shannon),
+                   median_pd = median(PD))
+
+#Wilcoxon test of location
+wilcox.test(Observed ~ Status, data = adiv, exact = FALSE, conf.int = TRUE)
+
+# we can do it on all the 3 parameters that were checked. But, the test are also visivle on the plot
+# We find evidence to support the null hypothesis that there is no significant difference in location between the groups.
+
+
+#Estimate the richness using breakaway - this is a method to reduce issue in depth
+
+#Obtain breakaway estimates
+
+ba_adiv <- breakaway(ps)
+ba_adiv[1]
+#Plot estimates
+plot(ba_adiv, ps, color = "Status")     
+#Examine models
+summary(ba_adiv) %>%
+  add_column("SampleNames" = ps %>% otu_table %>% sample_names) %>% 
+  add_column("Observed" = phyloseq::estimate_richness(ps, measures = "Observed")$Observed) #I added the original value here
+#Test for group differnce
+bt <- breakaway::betta(summary(ba_adiv)$estimate,
+                       summary(ba_adiv)$error,
+                       make_design_matrix(ps, "Status"))
+bt$table  
+
+
+## Beta-diversity
+#Beta-diversity provides a measure of similarity, or dissimilarity, 
+#of one microbial composition to another. 
