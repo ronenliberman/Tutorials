@@ -200,7 +200,7 @@ wilcox.test(Observed ~ Status, data = adiv, exact = FALSE, conf.int = TRUE)
 
 
 #Estimate the richness using breakaway - this is a method to reduce issue in depth
-
+#https://github.com/adw96/breakaway
 #Obtain breakaway estimates
 
 ba_adiv <- breakaway(ps)
@@ -221,3 +221,58 @@ bt$table
 ## Beta-diversity
 #Beta-diversity provides a measure of similarity, or dissimilarity, 
 #of one microbial composition to another. 
+
+# There is a lot of Information about *compositional data analysis approach* in the tutorial. read it to understand more
+
+#First we transform the data
+#CLR transform
+(ps_clr <- microbiome::transform(ps, "clr"))
+phyloseq::otu_table(ps)[1:5, 1:5]
+phyloseq::otu_table(ps_clr)[1:5, 1:5] # see the difference, the data is no longer counts but transfromed to the geometric mean of all taxa on the log scale.
+
+#PCA via phyloseq
+ord_clr <- phyloseq::ordinate(ps_clr, "RDA")
+#Plot scree plot
+phyloseq::plot_scree(ord_clr) + 
+  geom_bar(stat="identity", fill = "blue") +
+  labs(x = "\nAxis", y = "Proportion of Variance\n")
+
+sapply(ord_clr$CA$eig[1:5], function(x) x / sum(ord_clr$CA$eig)) # calculates the proportions of each PC and returns a vector
+
+#Scale axes and plot ordination
+clr1 <- ord_clr$CA$eig[1] / sum(ord_clr$CA$eig)
+clr2 <- ord_clr$CA$eig[2] / sum(ord_clr$CA$eig)
+
+
+phyloseq::plot_ordination(ps, ord_clr, type="samples", color="Status") + 
+  geom_point(size = 2) +
+  stat_ellipse(aes(group = Status), linetype = 2)
+
+#statistical examination of diffrences between control and the fatigue using PERMANOVA & ADONIS
+
+#Generate distance matrix
+clr_dist_matrix <- phyloseq::distance(ps_clr, method = "euclidean") 
+#ADONIS test
+vegan::adonis(clr_dist_matrix ~ phyloseq::sample_data(ps_clr)$Status)
+
+#Dispersion test and plot - type of assumption testing for PERMANOVA
+dispr <- vegan::betadisper(clr_dist_matrix, phyloseq::sample_data(ps_clr)$Status)
+dispr
+
+plot(dispr, main = "Ordination Centroids and Dispersion Labeled: Aitchison Distance", sub = "")
+boxplot(dispr, main = "", xlab = "")
+permutest(dispr)
+
+#Calculating UniFrac metric 
+#Generate distances
+ord_unifrac <- ordinate(ps_rare, method = "PCoA", distance = "wunifrac")
+ord_unifrac_un <- ordinate(ps_rare, method = "PCoA", distance = "unifrac")   
+#Plot ordinations
+a <- plot_ordination(ps_rare, ord_unifrac, color = "Status") + geom_point(size = 2)+
+  geom_point(size = 2) +
+  theme_bw()
+b <- plot_ordination(ps_rare, ord_unifrac_un, color = "Status") + geom_point(size = 2)+
+  geom_point(size = 2) +
+  theme_bw()
+cowplot::plot_grid(a, b, nrow = 1, ncol = 2, scale = .9, labels = c("Weighted", "Unweighted"))
+
