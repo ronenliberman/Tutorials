@@ -1,25 +1,29 @@
-#This is a tutorial about statistical analyis of Microbiome data
-#This tutorial follows this link
-#https://www.nicholas-ollberding.com/post/introduction-to-the-statistical-analysis-of-microbiome-data-in-r/
-#I will also implement examples from other sources
+
+#'This tutorial follows this link
+#'https://www.nicholas-ollberding.com/post/introduction-to-the-statistical-analysis-of-microbiome-data-in-r/
+#'I will also implement examples from other sources
+#'
+#+ echo=FALSE
 
 cran_packages <- c("tidyverse", "cowplot", "picante", "vegan", "HMP", "dendextend", "rms", "devtools")
 .bioc_packages <- c("phyloseq", "DESeq2", "microbiome", "metagenomeSeq", "ALDEx2")
+.bioc_packages2 <-c("ALDEx2","metagenomeSeq")
 .inst <- .cran_packages %in% installed.packages()
 if(any(!.inst)) {
   install.packages(.cran_packages[!.inst])
 }
 if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
-#BiocManager::install(.bioc_packages, version = "3.9")
-devtools::install_github("adw96/breakaway")
+BiocManager::install(.bioc_packages2)
+ devtools::install_github("adw96/breakaway")
 # Installing the files in the repository
 devtools::install_github(repo = "malucalle/selbal")
 
 install.packages("ALDEx2","metagenomeSeq","HMP","rms")
 
-# Loading the library
-library("selbal")
+#' Loading the library
+library("knitr")
+#spin("~/R/Tutorials/Tutorials/Create-Giloteaux-2016-Phyloseq-Object-master/Statistical Analysis of Microbiome Data in R.R", knit = FALSE)
 library(tidyverse); packageVersion("tidyverse")                 
 ## [1] '2.0.0'
 library(phyloseq); packageVersion("phyloseq")                    
@@ -222,11 +226,12 @@ bt$table
 #Beta-diversity provides a measure of similarity, or dissimilarity, 
 #of one microbial composition to another. 
 
-# There is a lot of Information about *compositional data analysis approach* in the tutorial. read it to understand more
+# There is a lot of Information about *compositional data analysis approach* in the
+#tutorial. read it to understand more
 
 #First we transform the data
 #CLR transform
-(ps_clr <- microbiome::transform(ps, "clr"))
+(ps_clr <- microbiome::transform(ps, "clr")) #centered log-ratio (CLR) transformation
 phyloseq::otu_table(ps)[1:5, 1:5]
 phyloseq::otu_table(ps_clr)[1:5, 1:5] # see the difference, the data is no longer counts but transfromed to the geometric mean of all taxa on the log scale.
 
@@ -275,4 +280,97 @@ b <- plot_ordination(ps_rare, ord_unifrac_un, color = "Status") + geom_point(siz
   geom_point(size = 2) +
   theme_bw()
 cowplot::plot_grid(a, b, nrow = 1, ncol = 2, scale = .9, labels = c("Weighted", "Unweighted"))
+
+##Differential abundance testing
+#+The goal of differential abundance testing is 
+#+to identify specific taxa associated with clinical metadata variables of interest.
+#+
+#+will also use *nested data* frames as advocated by Hadley Wickham 
+#+to keep the data and test results together in a single data.frame
+
+#Generate data.frame with OTUs and metadata
+ps_wilcox <- data.frame(t(data.frame(phyloseq::otu_table(ps_clr))))
+ps_wilcox$Status <- phyloseq::sample_data(ps_clr)$Status 
+#Define functions to pass to map
+wilcox_model <- function(df){
+  wilcox.test(abund ~ Status, data = df) 
+}
+wilcox_pval <- function(df){
+  wilcox.test(abund ~ Status, data = df)$p.value
+}
+#Create nested data frames by OTU and loop over each using map
+wilcox_results <- ps_wilcox %>%
+  gather(key = OTU, value = abund, -Status) %>%
+  group_by(OTU) %>%
+  nest() %>%
+  mutate(wilcox_test = map(data, wilcox_model),
+         p_value = map(data, wilcox_pval))                       
+#Show results
+head(wilcox_results)
+head(wilcox_results$data[[1]])
+wilcox_results$wilcox_test[[1]]
+wilcox_results$p_value[[1]]
+
+#Un-Nesting
+wilcox_results <- wilcox_results %>% 
+  dplyr::select(OTU, p_value) %>%
+  unnest(cols = c(p_value))
+head(wilcox_results)
+
+#Adding taxonomic labels
+taxa_info <- data.frame(tax_table(ps_clr))
+taxa_info <- taxa_info %>% rownames_to_column(var = "OTU")
+view(taxa_info)
+
+#Computing FDR corrected p-values
+wilcox_results <- wilcox_results %>%
+  full_join(taxa_info) %>%
+  arrange(p_value) %>%
+  mutate(BH_FDR = p.adjust(p_value, "BH")) %>%
+  filter(BH_FDR < 0.05) %>%
+  dplyr::select(OTU, p_value, BH_FDR, everything())
+## Joining, by = "OTU"
+#Printing results
+print.data.frame(wilcox_results) 
+
+#Another approach - ANOVA-like differential expression (ALDEx2)  
+#CoDA method for differential abundance testing. ALDEx2 can be run via a single command.
+#But, the are actually many complicated steps in the backround, check the Tutorial for more explanations. 
+#There are several steps that are occurring in the background. the steps include: check it: ?aldex 
+#+Generate a large number (here n=128) of posterior probabilities for the observance of each taxon (i.e. output many data.frames where the counts have been converted to proportions). This is done by Monte-Carlo sampling from a Dirichlet distribution with a small non-zero prior to deal with zeros. The total read count therefore only contributes to the precision of the proportions.
+#+Apply the centered log-ratio transformation to each instance.
+#+Apply the Wilcoxon test to each taxon for each simulated instance.
+#+Estimate the effect size as the difference between conditions divided by the maximum difference within conditions averaging over all instances. Scaling the between group difference by the maximum within group difference gives us a standardized effect size measure.
+#+Obtain the expected p-values for each taxon by averaging over all instances.
+#+Apply the BH-FDR correction to control the false positive rate.
+
+#Run ALDEx2
+aldex2_da <- ALDEx2::aldex(data.frame(phyloseq::otu_table(ps)),
+                           phyloseq::sample_data(ps)$Status,
+                           test="t", effect = TRUE, denom="iqlr")
+
+ALDEx2::aldex.plot(aldex2_da, type="MW", test="wilcox", called.cex = 1, cutoff = 0.05)
+
+
+#Clean up presentation
+sig_aldex2 <- aldex2_da %>%
+  rownames_to_column(var = "OTU") %>%
+  #filter(wi.eBH < 0.05) %>%
+  arrange(effect, wi.eBH) %>%
+  dplyr::select(OTU, diff.btw, diff.win, effect, wi.ep, wi.eBH)
+#head(sig_aldex2)
+sig_aldex2 <- left_join(sig_aldex2, taxa_info)
+  
+sig_aldex2
+#We see that again that several Clostridiales organisms are identified as differentially abundant. Consistent with the results of running the Wilcoxon test outside of ALDEx2, we see that OTU48, OTU38, OTU44, and OTU8 are listed as differentially abundant. The others do not reach the FDR cut-off used here; although, they likely have “largish” effect sizes. Try and see if you can obtain these values. The reason for the discrepancy is hard to discern, 
+#+but may be related to differences in the use of the CLR basis (geometric mean of all taxa versus the IQLR)
+#+ and/or the use of the Bayesian resampling with a non-zero prior
+#+ 
+#+ 
+##Prediction model for microbiome data
+#+One problem we face when building a predictive model from metagenomic data is
+#+ that we often have more features (taxon) than we have samples.
+
+#First we will create a data.frame that contains the Status and the first 3 PCs from the centered-log ratio
+#transformed abundance table we generated before. We will then plot the unconditional association for each PC with the outcome of CF versus control.
 
